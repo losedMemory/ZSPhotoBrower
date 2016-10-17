@@ -5,7 +5,7 @@
 //  Created by 周松 on 16/10/4.
 //  Copyright © 2016年 周松. All rights reserved.
 //
-
+//弹出的提示框保存图片  转发微博 赞等
 #import <UIKit/UIKit.h>
 
 typedef void(^ActionBlock) (NSInteger buttonIndex);

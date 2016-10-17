@@ -18,6 +18,13 @@
     return self;
 }
 
+- (instancetype)initWithFrame:(CGRect)frame{
+    if (self = [super initWithFrame: frame]) {
+        [self setupImageView];
+    }
+    return self;
+}
+
 - (void)setupImageView{
     
     __weak typeof(self)weakSelf = self;

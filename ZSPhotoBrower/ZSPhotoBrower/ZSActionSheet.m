@@ -138,6 +138,22 @@ static id ActionSheet;
     }];
 }
 
+//显示提示视图
+- (void)show{
+    _coverView.alpha = 0;
+    [_bgView setTransform:CGAffineTransformIdentity];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [window addSubview:self];
+    self.hidden = NO;
+    [UIView animateWithDuration:0.3 animations:^{
+        _coverView.alpha = 0.3;
+        [_bgView setTransform:CGAffineTransformMakeTranslation(0, -_bgView.frame.size.height)];
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+}
+
 @end
 
 

@@ -29,7 +29,6 @@
 		85A2DC711D9D668900884641 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2DC5F1D9D668900884641 /* UIImageView+HighlightedWebCache.m */; };
 		85A2DC721D9D668900884641 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2DC611D9D668900884641 /* UIImageView+WebCache.m */; };
 		85A2DC731D9D668900884641 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2DC631D9D668900884641 /* UIView+WebCacheOperation.m */; };
-		85A2DC761D9D66B700884641 /* ZSPhotoBorwer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2DC751D9D66B700884641 /* ZSPhotoBorwer.m */; };
 		85A2DC791DA0A29500884641 /* ZSPhotoBrowerNumLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2DC781DA0A29500884641 /* ZSPhotoBrowerNumLabel.m */; };
 		85A2DC7C1DA0A5CF00884641 /* ZSPhotoBrowerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2DC7B1DA0A5CF00884641 /* ZSPhotoBrowerImageView.m */; };
 		85A2DC7F1DA0A94700884641 /* ZSPhotoBrowerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2DC7E1DA0A94700884641 /* ZSPhotoBrowerCell.m */; };
@@ -38,6 +37,9 @@
 		85A2DC881DA12D4700884641 /* ZSToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2DC871DA12D4700884641 /* ZSToast.m */; };
 		85A2DC8C1DA3A21900884641 /* ZSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2DC8B1DA3A21900884641 /* ZSActionSheet.m */; };
 		85A2DC8E1DA3B1D400884641 /* ZSActionSheet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85A2DC8D1DA3B1D400884641 /* ZSActionSheet.bundle */; };
+		85B227E01DA5FA7F000C12AF /* ZSPhotoBrower.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85B227DF1DA5FA7F000C12AF /* ZSPhotoBrower.bundle */; };
+		85C511E01DB33CA300F6694A /* ZSPhotoBorwers.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C511DB1DB32B1000F6694A /* ZSPhotoBorwers.m */; };
+		85C511E31DB33D9E00F6694A /* ZSPhotoBorwerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C511E21DB33D9E00F6694A /* ZSPhotoBorwerItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,8 +86,6 @@
 		85A2DC611D9D668900884641 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		85A2DC621D9D668900884641 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		85A2DC631D9D668900884641 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		85A2DC741D9D66B700884641 /* ZSPhotoBorwer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSPhotoBorwer.h; sourceTree = "<group>"; };
-		85A2DC751D9D66B700884641 /* ZSPhotoBorwer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSPhotoBorwer.m; sourceTree = "<group>"; };
 		85A2DC771DA0A29500884641 /* ZSPhotoBrowerNumLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSPhotoBrowerNumLabel.h; sourceTree = "<group>"; };
 		85A2DC781DA0A29500884641 /* ZSPhotoBrowerNumLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSPhotoBrowerNumLabel.m; sourceTree = "<group>"; };
 		85A2DC7A1DA0A5CF00884641 /* ZSPhotoBrowerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSPhotoBrowerImageView.h; sourceTree = "<group>"; };
@@ -102,6 +102,11 @@
 		85A2DC8A1DA3A21900884641 /* ZSActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSActionSheet.h; sourceTree = "<group>"; };
 		85A2DC8B1DA3A21900884641 /* ZSActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSActionSheet.m; sourceTree = "<group>"; };
 		85A2DC8D1DA3B1D400884641 /* ZSActionSheet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZSActionSheet.bundle; sourceTree = "<group>"; };
+		85B227DF1DA5FA7F000C12AF /* ZSPhotoBrower.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZSPhotoBrower.bundle; sourceTree = "<group>"; };
+		85C511DA1DB32B1000F6694A /* ZSPhotoBorwers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSPhotoBorwers.h; sourceTree = "<group>"; };
+		85C511DB1DB32B1000F6694A /* ZSPhotoBorwers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSPhotoBorwers.m; sourceTree = "<group>"; };
+		85C511E11DB33D9E00F6694A /* ZSPhotoBorwerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSPhotoBorwerItem.h; sourceTree = "<group>"; };
+		85C511E21DB33D9E00F6694A /* ZSPhotoBorwerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSPhotoBorwerItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +165,10 @@
 		85A2DC411D9D662400884641 /* ZSPhotoBrower */ = {
 			isa = PBXGroup;
 			children = (
-				85A2DC741D9D66B700884641 /* ZSPhotoBorwer.h */,
-				85A2DC751D9D66B700884641 /* ZSPhotoBorwer.m */,
+				85C511E11DB33D9E00F6694A /* ZSPhotoBorwerItem.h */,
+				85C511E21DB33D9E00F6694A /* ZSPhotoBorwerItem.m */,
+				85C511DA1DB32B1000F6694A /* ZSPhotoBorwers.h */,
+				85C511DB1DB32B1000F6694A /* ZSPhotoBorwers.m */,
 				85A2DC771DA0A29500884641 /* ZSPhotoBrowerNumLabel.h */,
 				85A2DC781DA0A29500884641 /* ZSPhotoBrowerNumLabel.m */,
 				85A2DC7A1DA0A5CF00884641 /* ZSPhotoBrowerImageView.h */,
@@ -177,6 +184,7 @@
 				85A2DC8A1DA3A21900884641 /* ZSActionSheet.h */,
 				85A2DC8B1DA3A21900884641 /* ZSActionSheet.m */,
 				85A2DC891DA245D700884641 /* PrefixHeader.pch */,
+				85B227DF1DA5FA7F000C12AF /* ZSPhotoBrower.bundle */,
 				85A2DC8D1DA3B1D400884641 /* ZSActionSheet.bundle */,
 			);
 			name = ZSPhotoBrower;
@@ -253,6 +261,7 @@
 				TargetAttributes = {
 					85A2DC261D9D63BB00884641 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = UHEU266226;
 					};
 				};
 			};
@@ -281,6 +290,7 @@
 			files = (
 				85A2DC8E1DA3B1D400884641 /* ZSActionSheet.bundle in Resources */,
 				85A2DC3A1D9D63BB00884641 /* LaunchScreen.storyboard in Resources */,
+				85B227E01DA5FA7F000C12AF /* ZSPhotoBrower.bundle in Resources */,
 				85A2DC371D9D63BB00884641 /* Assets.xcassets in Resources */,
 				85A2DC351D9D63BB00884641 /* Main.storyboard in Resources */,
 			);
@@ -293,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C511E01DB33CA300F6694A /* ZSPhotoBorwers.m in Sources */,
 				85A2DC711D9D668900884641 /* UIImageView+HighlightedWebCache.m in Sources */,
 				85A2DC651D9D668900884641 /* NSData+ImageContentType.m in Sources */,
 				85A2DC6B1D9D668900884641 /* SDWebImageManager.m in Sources */,
@@ -301,10 +312,10 @@
 				85A2DC731D9D668900884641 /* UIView+WebCacheOperation.m in Sources */,
 				85A2DC791DA0A29500884641 /* ZSPhotoBrowerNumLabel.m in Sources */,
 				85A2DC661D9D668900884641 /* SDImageCache.m in Sources */,
+				85C511E31DB33D9E00F6694A /* ZSPhotoBorwerItem.m in Sources */,
 				85A2DC321D9D63BB00884641 /* ViewController.m in Sources */,
 				85A2DC641D9D668900884641 /* MKAnnotationView+WebCache.m in Sources */,
 				85A2DC681D9D668900884641 /* SDWebImageDecoder.m in Sources */,
-				85A2DC761D9D66B700884641 /* ZSPhotoBorwer.m in Sources */,
 				85A2DC6F1D9D668900884641 /* UIImage+MultiFormat.m in Sources */,
 				85A2DC851DA0EDA000884641 /* UIView+Sugar.m in Sources */,
 				85A2DC821DA0D80700884641 /* ZSProgressHUD.m in Sources */,
@@ -431,8 +442,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UHEU266226;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = ZSPhotoBrower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.ZSPhotoBrower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,8 +457,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UHEU266226;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = ZSPhotoBrower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.ZSPhotoBrower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -470,6 +487,7 @@
 				85A2DC401D9D63BB00884641 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

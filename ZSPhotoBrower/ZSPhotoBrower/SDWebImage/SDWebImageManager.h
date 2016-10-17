@@ -179,7 +179,7 @@ SDWebImageManager *manager = [SDWebImageManager sharedManager];
  *
  * @return SDWebImageManager shared instance
  */
-+ (SDWebImageManager *)sharedManager;
++ (instancetype)sharedManager;
 
 /**
  * Allows to specify instance of cache and image downloader used with image manager.

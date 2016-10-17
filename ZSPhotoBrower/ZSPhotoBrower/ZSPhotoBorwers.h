@@ -1,23 +1,14 @@
 //
-//  ZSPhotoBorwer.h
+//  ZSPhotoBorwers.h
 //  ZSPhotoBrower
 //
-//  Created by 周松 on 16/9/29.
+//  Created by 周松 on 16/10/16.
 //  Copyright © 2016年 周松. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface ZSPhotoBorwer : NSObject
-
-@property (nonatomic,copy) NSString *url;
-
-@property (nonatomic,strong) UIView *sourceView;
-
-@end
-
-
+@class ZSPhotoBorwerItem;
 @protocol ZSPhotoBorwerDelegate <NSObject>
 
 //即将消失
@@ -27,10 +18,9 @@
 - (void)photoBrowerWriteSavedPhotoAlbumStatus:(BOOL)success;
 
 //右上角按钮的点击
-- (void)photoBrowerRightPoerationActionWithIndex:(NSInteger)index;
+- (void)photoBrowerRightOperationActionWithIndex:(NSInteger)index;
 
 @end
-
 
 @interface ZSPhotoBorwers : UIView
 
@@ -49,7 +39,10 @@
 //是否需要底部控件
 @property (nonatomic,assign) BOOL isNeedPageControl;
 
-@property (nonatomic,weak) id <ZSPhotoBorwerDelegate>delegate;
+//是否需要显示右上角的按钮
+@property (nonatomic,assign) BOOL isNeedRightButton;
+
+@property (nonatomic,weak) id <ZSPhotoBorwerDelegate > delegate;
 
 //展现
 - (void)present;
@@ -58,9 +51,3 @@
 - (void)dismiss;
 
 @end
-
-
-
-
-
-

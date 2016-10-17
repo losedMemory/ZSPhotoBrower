@@ -67,7 +67,8 @@
 
 ///重新加载图片
 - (void)reloadImage{
-    
+    _reloadLabel.hidden = YES;
+    [self sd_ImageWithURL:_url placeHolder:_placeHolder];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -184,10 +185,10 @@
     [super layoutSubviews];
     _scrollView.frame = self.bounds;
     
-    [self reloadFrames];
+    [self reloadFrame];
 }
 
-- (void)reloadFrames{
+- (void)reloadFrame{
     CGRect frame = self.frame;
     if (_imageView.image) {
       
@@ -195,8 +196,8 @@
         CGRect imageFrame = CGRectMake(0, 0, imageSize.width, imageSize.height);
         //如果scrollView的宽<=高,将图片的宽设置成scrollView的宽,高度等比率缩放,在竖屏状态下,宽度是比高度要小的
         if (frame.size.width <= frame.size.height) {
-            CGFloat ratio = frame.size.width / frame.size.height;
-            imageFrame.size.height = imageFrame.size.width * ratio;
+            CGFloat ratio = frame.size.width / imageFrame.size.width;
+            imageFrame.size.height = imageFrame.size.height * ratio;
             imageFrame.size.width = frame.size.width;
             
         }else{//在横屏模式下,宽度会比高度大
@@ -240,6 +241,7 @@
         _imageView.frame = frame;
         _scrollView.contentSize = _imageView.size;
     }
+    _scrollView.contentOffset = CGPointZero;
 
 }
 
@@ -254,6 +256,17 @@
     CGPoint actualCenter = CGPointMake(scrollView.contentSize.width * 0.5 + offsetX, scrollView.contentSize.height * 0.5 + offsetY);
     
     return actualCenter;
+}
+#pragma  mark --代理
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
+    return _imageView;
+}
+
+
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView{
+    //每次拖动都重置图片的中心点
+    _imageView.center = [self centerOfScrollViewContent:scrollView];
 }
 
 @end
